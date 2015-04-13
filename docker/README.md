@@ -1,4 +1,4 @@
-Docker for backbone and Flask
+Docker for webui
 ==============
 
 This image is based on yougos666/nginx (dockerhub) 
