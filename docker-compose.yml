@@ -1,0 +1,7 @@
+webui:
+    image: domohack/domohack-webui:latest
+    ports:
+        - ":80:80"
+    volumes:
+        - ./app:/usr/share/nginx/html:rw 
+
