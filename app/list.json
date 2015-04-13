@@ -1,0 +1,23 @@
+[
+     {
+    	 "id": "1",
+    	 "name": "test1",
+		 "famille": "prise",
+		 "type": "on/off",
+		 "unite": "boolean"
+     },
+     {
+    	 "id": "2",
+    	 "name": "test2",
+		 "famille": "prise",
+		 "type": "on/off",
+		 "unite": "boolean"
+     },
+     {
+    	 "id": "3",
+    	 "name": "test3",
+		 "famille": "prise",
+		 "type": "on/off",
+		 "unite": "boolean"
+     }
+]

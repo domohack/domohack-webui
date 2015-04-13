@@ -1,0 +1,3 @@
+[submodule "app/js/frontend"]
+	path = app/js/frontend
+	url = git@github.com:domohack/domohack-frontend.git

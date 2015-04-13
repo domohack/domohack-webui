@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>DomoHack</title>
+    <meta content="text/html; charset=utf-8" name="Content-Type">
+	<meta content="fr-FR" name="Content-language">
+    <meta name="author" content="DomoHack">
+    <meta name="copyright" content="DomoHack">
+    <meta name="description" content="DomoHack">
+	<meta name="keywords" content="DomoHack">
+    <link href="/" rel="canonical">		
+	<link title="DomoHack" href="/" rel="Home">
+	<link href="/" rel="Index">
+
+	<script data-main="js/main.js" src="js/frontend/libs/require.js"></script>
+        
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+		
+</head>
+<body>	
+	<div class="text-center">
+		<img src="img/logo_domo_px200.png" />
+	</div>
+	
+	<div class="text-center">
+		<h1>DomoHack</h1>
+	</div>
+	<div class="container text-center">
+		
+    </div>
+    
+    <div id="content" class="row">
+    
+    </div>
+</body>
+</html>
+
+<script id="connectedObjectCollection" type="text/template">
+  <select name="connectedObjectCollection" class="form-control" id="select-connectedObjectCollection">
+	<option value>Choose connected object</option>
+	<%= datasOption %>
+</select>
+</br>
+<button type="button" class="btn btn-default" id="addWidget">Add Widget</button> 
+</script>
+
+<script id="connectedObject" type="text/template">
+  <option value="<%= id  %>"><%= name  %></option>
+</script>
+
+<script id="widget" type="text/template">
+<div id="widget-content widget-content-<%=  widget.name %>" class="col-md-3">
+	<div class="panel panel-default" id="panel-widget-<%=  widget.name %>">
+      <div class="panel-heading">
+        <h3 class="panel-title" id="panel-title"><%= widget.name %></h3>
+      </div>
+      <div class="panel-body" <% if ( widget.type == "on/off") { %>style="text-align:left" <% } %>>
+		<% if ( widget.type == "on/off") { %>			 
+			<button type="button" class="button-commut-<%=  widget.name %>"  data-value="<% if (widget.value.etat) { %>0<% } else { %>1<% } %>" data-widget="<%=  widget.name %>" class="btn btn-default" id="commut">Commut to <% if (widget.value.etat) { %>OFF<% } else { %>ON<% } %></button>
+		<% } %>
+      </div>
+	</div>
+</div>
+</script>
