@@ -1,8 +1,6 @@
 # domohack-webui
 IHM Web de DomoHack
 
-## Based on backbone, jquery, underscore
-## Start in docker with backend app
 
 Installation
 --------------
